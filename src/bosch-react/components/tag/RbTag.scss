@@ -1,0 +1,11 @@
+@import '../../color.scss';
+
+.rb-tag-wrapper {
+    display: table;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid $bosch-black;
+    width: fit-content;
+    margin: 0.25rem;
+}
+
+

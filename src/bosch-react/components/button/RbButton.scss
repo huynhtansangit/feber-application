@@ -1,0 +1,115 @@
+@import '../../style.scss';
+@import '../../color.scss';
+
+.rb-button {
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 5rem;
+    text-align: center;
+
+    .label {
+        font-family: $bosch-font;
+        text-align: center;
+    }
+    // Size
+    &.rb-large-button {
+        padding: 1.25rem 1.5rem;
+        margin: 0.5rem;
+        .label {
+            font-size: 1.25rem;
+        }
+    }
+    &.rb-standard-button {
+        padding: 1rem;
+        margin: 0.5rem;
+        .label {
+            font-size: 1rem;
+        }
+    }
+    &.rb-small-button {
+        padding: 0.8125rem 0.75rem;
+        margin: 0.5rem;
+        .label {
+            font-size: 0.875rem;
+        }
+    }
+    &.rb-tiny-button {
+        padding: 0.625rem 0.75rem;
+        margin: 0.5rem;
+        .label {
+            font-size: 0.75rem;
+        }
+    }
+
+    // PRIMARY
+    &.rb-primary-button {
+        background-color: $bosch-dark-blue;
+        .label {
+            color: $bosch-white;
+        }
+        &:hover {
+            background-color: $bosch-light-blue-w50;
+        }
+        &.focus {
+            background-color: $bosch-light-blue;
+        }
+        &.disabled {
+            background-color: $bosch-light-gray;
+        }
+    }
+
+    // SECONDARY
+    &.rb-secondary-button {
+        background-color: transparent;
+        border: 1px solid $bosch-dark-blue;
+        .label {
+            color: $bosch-dark-blue;
+        }
+        &:hover {
+            border-color: $bosch-light-blue-w50;
+            .label {
+                color: $bosch-light-blue-w50;
+            }
+        }
+        &.focus {
+            border-color: $bosch-light-blue;
+            .label {
+                color: $bosch-light-blue;
+            }
+        }
+        &.disabled {
+            border-color: $bosch-light-gray;
+            .label {
+                color: $bosch-light-gray;
+            }
+        }
+    }
+
+    // TERTIARY
+    &.rb-tertiary-button {
+        background-color: transparent;
+        border: none;
+        .label {
+            color: $bosch-dark-blue;
+        }
+        &:hover {
+            .label {
+                color: $bosch-light-blue-w50;
+            }
+        }
+        &.focus {
+            .label {
+                color: $bosch-light-blue;
+            }
+        }
+        &.disabled {
+            .label {
+                color: $bosch-light-gray;
+            }
+        }
+    }
+
+}

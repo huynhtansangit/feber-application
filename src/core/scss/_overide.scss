@@ -1,0 +1,104 @@
+@import '../../bosch-react/style.scss';
+@import '../../bosch-react/color.scss';
+
+html{
+    overflow: hidden;
+    height: 100%;   
+    body {
+        overflow: auto;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+}
+// FLUENT UI
+.ms-Label {
+    font-weight: inherit!important;
+}
+/* BUG: Fix some issue with blocks */
+.ms-Grid-col {
+    display: inline-block;
+}
+/* Command bar */
+.ms-CommandBar[role="menubar"]{
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+/* Date picker */
+.ms-DatePicker {
+    .ms-TextField-fieldGroup:after{
+        display: none;
+    }
+    .ms-TextField-field{
+        font-size: 0.75rem;
+    }
+}
+/* People picker */
+.invalid .ms-PeoplePicker .ms-BasePicker-text {
+    border-color: #a80000;
+}
+/* Detail list */
+.ms-DetailsList {
+    div[data-automationid=DetailsRow]{
+        border-bottom: thin solid #efefef;
+        &.is-selected{
+            background-color: #e6f2fb;
+        }
+        &:hover{
+            background-color:#cde6f7!important;
+        }
+    }
+    div[class^="ms-GroupedList-group"]{
+        background: #efefef!important;
+        border-bottom: 2px solid map-get($colors,"white");
+    }
+}
+/* Tabs */
+div[role="tablist"] button:first-child{
+    padding-left: 0px!important;
+}
+/* Choice picker */
+.customized-2-options .ms-ChoiceField{
+    width: 50%;
+    display: inline-block;
+}
+/* Checbox for Detail list's heasder */
+.customized-header-checkbox {
+    font-size: 20px;
+    &[data-icon-name=CheckboxCompositeReversed]{
+        color: map-get($colors,"blue-light");
+    }
+}
+/* Contextual Menu */
+.ms-ContextualMenu-item button{
+    font-size: 15px;
+    font-weight: lighter;
+}
+/* Radio buttons */
+.customized-radio-buttons {
+    width: 100%;
+    .ms-ChoiceFieldGroup-flexContainer {
+        display: block;
+        .ms-ChoiceField {
+            display: inline-block;
+            width: 50%;
+        }
+    }
+}
+/* Searchbox */
+.customized-searchbox-20vw .ms-SearchBox{
+    width: 20vw;
+}
+
+/* Table */
+.ms-DetailsHeader-cellName {
+    font-family: $bosch-font;
+}
+
+/* Link */
+.ms-Link {
+    font-family: $bosch-font;
+    color: $bosch-dark-blue;
+}

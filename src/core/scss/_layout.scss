@@ -1,0 +1,59 @@
+/* Master page */
+.Header{
+    .left-area {
+        float: left!important;
+        padding-top: 1rem;
+        img{
+            margin-left: 1rem;
+            width: 10rem;
+        }
+    }
+    .right-area{
+        float: right!important;
+        padding-top: 1rem;
+        margin-right: 1rem;
+        text-align: right;
+        img{
+            width: 12vw;
+        }
+    }
+    .bosch-band{
+        height: 15px;
+        width: 100%;
+    }
+}
+.Main-Content {
+    .feber-home-logo {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        img{
+            width: 20vw;
+        }
+    }
+}
+.Footer {
+    .info {
+        position: fixed; 
+        bottom: 15px;
+        background: #ffffff;
+        width: 100%;
+        backdrop-filter: blur(10px);
+        .rb-label {
+            display: table-cell;
+            font-size: 0.75rem;
+            padding: 0.5rem 1rem;
+        }
+        a {
+            padding: 0px 1rem;
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+    .bosch-band{
+        height: 15px;
+        width: 100%;
+        position: fixed; 
+        bottom:0%;
+    }
+}

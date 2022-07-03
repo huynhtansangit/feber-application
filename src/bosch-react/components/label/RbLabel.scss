@@ -1,0 +1,36 @@
+@import '../../style.scss';
+@import '../../color.scss';
+.rb-label {
+    color: $bosch-black;
+    font-family: $bosch-font!important;
+    display: inline-block;
+    font-size: 1rem;
+    outline: none;
+    &.block {
+        display: block;
+    }
+    &.rb-xxlarge-label{
+        font-size: 1.75rem;
+    }
+    &.rb-xlarge-label{
+        font-size: 1.5rem;
+    }
+    &.rb-large-label{
+        font-size: 1.25rem;
+    }
+    &.rb-standard-label{
+        font-size: 1rem;
+    }
+    &.rb-small-label{
+        font-size: 0.75rem;
+    }
+    &.rb-tiny-label{
+        font-size: 0.5rem;
+    }
+    &.has-padding {
+        &.rb-standard-label{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
+}

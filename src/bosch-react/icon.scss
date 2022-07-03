@@ -1,0 +1,242 @@
+.rb-ic {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    text-rendering: auto;
+    line-height: 1;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-repeat: no-repeat!important;
+}
+
+// Check mark
+.rb-ic-checkmark {
+    background: url('./icons/checkmark.svg');
+}
+
+.rb-ic-checkmark-disabled {
+    background: url('./icons/checkmark-disabled.svg');
+}
+
+// Down
+.rb-ic-down {
+    background: url('./icons/down.svg');
+}
+
+.rb-ic-down-dark-blue {
+    background: url('./icons/down-dark-blue.svg');
+}
+
+.rb-ic-down-light-blue {
+    background: url('./icons/down-light-blue.svg');
+}
+
+.rb-ic-down-light-gray {
+    background: url('./icons/down-light-gray.svg');
+}
+
+// Forward right
+
+.rb-ic-forward-right {
+    background: url('./icons/forward-right.svg');
+}
+
+.rb-ic-forward-right-dark-blue {
+    background: url('./icons/forward-right-dark-blue.svg');
+}
+
+.rb-ic-forward-right-light-blue {
+    background: url('./icons/forward-right-light-blue.svg');
+}
+
+.rb-ic-forward-right-light-gray {
+    background: url('./icons/forward-right-light-gray.svg');
+}
+
+.rb-ic-forward-right-white {
+    background: url('./icons/forward-right-white.svg');
+}
+
+// Search
+.rb-ic-search {
+    background: url('./icons/search.svg');
+}
+
+// Close
+.rb-ic-close {
+    background: url('./icons/close.svg');
+}
+
+.rb-ic-close-dark-blue {
+    background: url('./icons/close-dark-blue.svg');
+}
+
+.rb-ic-close-light-blue {
+    background: url('./icons/close-light-blue.svg');
+}
+
+.rb-ic-close-light-gray {
+    background: url('./icons/close-light-gray.svg');
+}
+
+// Document PDF
+.rb-ic-document-pdf {
+    background: url('./icons/document-pdf.svg');
+}
+
+// Lock closed
+.rb-ic-lock-closed {
+    background: url('./icons/lock-closed.svg');
+}
+
+// Empty star
+.rb-ic-wishlist {
+    background: url('./icons/wishlist.svg');
+}
+
+// Yellow full star
+.rb-ic-wishlist-full-yellow {
+    background: url('./icons/wishlist_Fullyellow.svg');
+}
+
+// Back menu
+.rb-ic-back-menu {
+    background: url('./icons/back-menu.svg');
+}
+
+// Back menu - mirror
+.rb-ic-back-menu-mirror {
+    background: url('./icons/mail-forward.svg');
+}
+
+// Support button
+.rb-ic-support {
+    background: url('./icons/mail.svg');
+}
+
+// Document Xls
+.rb-ic-document-xls {
+    background: url('./icons/document-xls.svg');
+}
+// Notification active
+.rb-ic-notification-active {
+    background: url('./icons/notification-active.svg');
+}
+// Arrow up frame
+.rb-ic-arrow-up-frame {
+    background: url('./icons/arrow-up-frame.svg');
+}
+// Import
+.rb-ic-import {
+    background: url('./icons/add-frame.svg');
+}
+// Back-left
+.rb-ic-back-left {
+    background: url('./icons/back-left.svg');
+}
+// Back left light gray
+.rb-ic-back-left-light-gray {
+    background: url('./icons/back-left-light-gray.svg');
+}
+// Calendar
+.rb-ic-calendar {
+    background: url('./icons/calendar.svg');
+}
+
+// Document add
+.rb-ic-document-add-white{
+    background: url('./icons/document-add-white.svg');
+}
+.rb-ic-document-add-light-gray{
+    background: url('./icons/document-add-light-gray.svg');
+}
+// Document check
+.rb-ic-document-check{
+    background: url('./icons/document-check.svg');
+}
+.rb-ic-document-check-white{
+    background: url('./icons/document-check-white.svg');
+}
+.rb-ic-document-check-light-gray{
+    background: url('./icons/document-check-light-gray.svg');
+}
+// Document locked
+.rb-ic-document-locked{
+    background: url('./icons/document-locked.svg');
+}
+.rb-ic-document-locked-white{
+    background: url('./icons/document-locked-white.svg');
+}
+.rb-ic-document-locked-light-gray{
+    background: url('./icons/document-locked-light-gray.svg');
+}
+// Document arrow up
+.rb-ic-document-arrow-up{
+    background: url('./icons/document-arrow-up.svg');
+}
+.rb-ic-document-arrow-up-white{
+    background: url('./icons/document-arrow-up-white.svg');
+}
+.rb-ic-document-arrow-up-light-gray{
+    background: url('./icons/document-arrow-up-light-gray.svg');
+}
+// Document cv
+.rb-ic-document-cv{
+    background: url('./icons/document-cv.svg');
+}
+.rb-ic-document-cv-white{
+    background: url('./icons/document-cv-white.svg');
+}
+.rb-ic-document-cv-light-gray{
+    background: url('./icons/document-cv-light-gray.svg');
+}
+// Document edit
+.rb-ic-document-edit{
+    background: url('./icons/document-edit.svg');
+}
+.rb-ic-document-edit-white{
+    background: url('./icons/document-edit-white.svg');
+}
+.rb-ic-document-edit-light-gray{
+    background: url('./icons/document-edit-light-gray.svg');
+}
+// Info i frame
+.rb-ic-info-i-frame {
+    background: url('./icons/info-i-frame.svg');
+}
+.rb-ic-info-i-frame-dark-gray {
+    background: url('./icons/info-i-frame-dark-gray.svg');
+}
+
+.rb-ic-abort-frame-black{
+    background: url('./icons/abort-frame-black.svg');
+}
+
+
+//New management icon
+.rb-ic-statistics{
+    background: url('./icons/chart-line-white.svg');
+}
+.rb-ic-move{
+    background: url('./icons/arrow-right-white.svg');
+}
+.rb-ic-grant-access{
+    background: url('./icons/keys-user-access-white.svg');
+}
+.rb-ic-divisions{
+    background: url('./icons/skyscraper-white.svg');
+}
+.rb-ic-departments{
+    background: url('./icons/cubes-white.svg');
+}
+.rb-ic-groups{
+    background: url('./icons/team-3-white.svg');
+}
+.rb-ic-logs{
+    background: url('./icons/document-search-white.svg');
+}
+
+.rb-ic-sync{
+    background: url('./icons/refresh-black.svg');
+}

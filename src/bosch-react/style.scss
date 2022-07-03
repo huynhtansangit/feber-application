@@ -1,0 +1,119 @@
+// Regular font
+@font-face {
+    font-family: "BoschFont";
+    src: url("./fonts/OTF/BoschSans-Regular.otf") format("otf"),
+        url("./fonts/TTF/BoschSans-Regular.ttf") format("ttf"),
+        url("./fonts/WEB/BoschSans-Regular.woff") format("woff"),
+        url("./fonts/WEB/BoschSans-Regular.woff2") format("woff2");
+}
+$bosch-font: "BoschFont";
+
+// Medium font
+@font-face {
+    font-family: "BoschFontMedium";
+    src: url("./fonts/OTF/BoschSans-Medium.otf") format("otf"),
+        url("./fonts/TTF/BoschSans-Medium.ttf") format("ttf"),
+        url("./fonts/WEB/BoschSans-Medium.woff") format("woff"),
+        url("./fonts/WEB/BoschSans-Medium.woff2") format("woff2");
+}
+$bosch-font-medium: "BoschFontMedium";
+
+// Light font
+@font-face {
+    font-family: "BoschFontLight";
+    src: url("./fonts/OTF/BoschSans-Light.otf") format("otf"),
+        url("./fonts/TTF/BoschSans-Light.ttf") format("ttf"),
+        url("./fonts/WEB/BoschSans-Light.woff") format("woff"),
+        url("./fonts/WEB/BoschSans-Light.woff2") format("woff2");
+}
+$bosch-font-light: "BoschFontLight";
+
+.pointer {
+    cursor: pointer;
+}
+
+.longAuthor {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden !important;
+    max-height: 46px !important;
+    //max-width: 360px;
+    @supports (-webkit-line-clamp: 3) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: initial !important;
+        display: -webkit-box !important;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}
+
+.a-chip {
+    font-family: boschsans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    background-color: #e0e2e5;
+    //backgroundColor: "#0078D4",
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 2rem;
+    width: auto;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  
+    &:hover {
+      background-color: #c1c7cc;
+      color: white;
+    }
+  
+    &__label {
+        margin: auto 1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+  
+      .-btnClose & {
+        margin-right: 8px;
+      }
+  
+      .-image & {
+        margin-left: 8px;
+      }
+    }
+  
+    &__close {
+        position: relative;
+        margin: auto .375rem;
+        width: .75rem;
+  
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: .0625rem;
+        height: .875rem;
+        top: -.4375rem;
+        right: .625rem;
+        //background: #71767c;
+        background: #000;
+      }
+  
+      &::after {
+        transform: rotate(45deg);
+      }
+  
+      &::before {
+        transform: rotate(
+            -45deg
+            );;
+      }
+  
+      svg {
+        display: block;
+      }
+    }
+}

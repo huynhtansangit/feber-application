@@ -1,0 +1,28 @@
+.upload-tooltip{
+    padding: 0px;
+    display: table;
+}
+.upload-icon-tooltip{
+    display: table-cell;
+    width: 10px!important;
+    padding: 0px!important;
+    color: #808080;
+    cursor: default;
+    @include prefix(user-select, none, webkit khtml moz ms);
+}
+.upload-message-tooltip{
+    top: -5px;
+    margin-left: 20px!important;
+    position: absolute!important;
+    width: 25vw!important;
+    font-size: 13px;
+    text-align: left;
+    background: map-get($colors,"white");
+    display: none;
+}
+.upload-message-tooltip>label{
+    padding: 0px;
+}
+.upload-icon-tooltip:hover + .upload-message-tooltip{
+    display: table-cell;
+}

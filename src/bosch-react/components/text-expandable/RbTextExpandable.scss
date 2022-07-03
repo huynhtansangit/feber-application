@@ -1,0 +1,43 @@
+@import '../../color.scss';
+@import '../../icon.scss';
+
+.rb-text-expandable-wrapper {
+    .rb-text-expandable-title {
+        display: table;
+        cursor: pointer;
+        .icon {
+            display: table-cell;
+            padding-right: 0.5rem;
+            &.rb-ic-close-dark-blue {
+                padding-left: 2rem;
+            }
+        }
+        .title {
+            display: table-cell;
+            padding-right: 2rem;
+            color: $bosch-dark-blue;
+            user-select:none;
+            -moz-user-select:none;
+            -webkit-user-select:none;
+        }
+        &:hover {
+            .icon {
+                &.rb-ic-down-dark-blue {
+                    background: url('../../icons/down-light-blue.svg');
+                }
+                &.rb-ic-forward-right-dark-blue {
+                    background: url('../../icons/forward-right-light-blue.svg');
+                }
+                &.rb-ic-close-dark-blue {
+                    background: url('../../icons/close-light-blue.svg');
+                }
+            }
+            .title {
+                color: $bosch-light-blue;
+            }
+        }
+    }
+    .rb-text-expandable-content {
+        padding: 1rem 1.5rem;
+    }
+}

@@ -1,0 +1,58 @@
+// VARIABLES
+@use "sass:map";
+$colors: (
+    "grey":             #212121,
+    "green":            rgb(0, 128, 0),
+    "white":            #ffffff,
+    "blue-standard":    #0000ff,
+    "blue-light":       #0078d4,
+    "blue-light-hover": #106ebe
+);
+$text-area-font: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+// PREFIX
+@mixin prefix($property, $value, $prefixes) {
+    @each $prefix in $prefixes {
+        -#{$prefix}-#{$property}: $value;
+    }
+    #{$property}: $value;
+}
+
+// GENERAL
+/* Text Alignments */
+@mixin text-alignment($alignments) {
+    @each $align in $alignments {
+        .text-#{$align}{
+            text-align: $align;
+        }
+    }
+};
+@include text-alignment(left center right);
+/* Font Styles */
+.font-bold {
+    font-weight: bold!important;
+}
+.font-italic {
+    font-style: italic!important;
+}
+.font-underline {
+    text-decoration: underline;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+/* Animation */
+@keyframes scaleIn {
+    from {
+      transform: scale(.5, .5);
+      opacity: .5;
+    }
+    to {
+      transform: scale(2.5, 2.5);
+      opacity: 0;
+    }
+  }
+
+/* Cursor pointer */
+.pointer {
+    cursor: pointer;
+}

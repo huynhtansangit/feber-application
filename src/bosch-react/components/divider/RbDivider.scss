@@ -1,0 +1,9 @@
+@import '../../color.scss';
+
+.rb-divider {
+    width: 100%;
+    margin: 0.5rem 0px;
+    padding: 0px;
+    border: none;
+    border-top: 1px solid $bosch-light-gray-w75;
+}

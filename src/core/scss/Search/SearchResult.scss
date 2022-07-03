@@ -1,0 +1,48 @@
+.search-document-icon {
+    background-size: 3.5rem!important;
+    height: 3.5rem!important;
+    width: 3.5rem!important;
+}
+
+.support-icon:before {
+    content: url(../../../bosch-react/icons/mail.svg);
+    width: 22px;
+    height: 19px;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 5px;
+}
+.search-action-icon {
+    cursor: pointer;
+    margin: 0.5rem;
+}
+.hover-white-blue{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border: 1px solid #999999;
+    display: table;
+    width: 100%;
+    &:hover{
+        background: #f4fbfe;
+    }
+}
+.search-hover-row{
+    $hoverpanel-color: #5b5b5b;
+    margin-top: 5px!important;
+    margin-bottom: 5px!important;
+    label{
+        color: $hoverpanel-color;
+        font-size: 12px;
+        padding: 0px;
+    }
+    textarea{
+        padding: 0px;
+        border: none;
+        background: transparent;
+        color: $hoverpanel-color;
+        font-size: 12px;
+        width: 100%;
+        resize: none;
+        font-family: $text-area-font;
+    }
+}

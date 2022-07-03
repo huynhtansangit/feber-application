@@ -1,0 +1,30 @@
+@import '../../../bosch-react/color.scss';
+
+/* Home */
+@mixin home-subscription ($name) {
+    .home-subscriptions-#{$name} label{
+        text-align: center;
+        @if ($name == "title"){
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 25px;
+        }
+        @else{
+            font-size: 20px;
+        }
+    }
+}
+@include home-subscription(title);
+@include home-subscription(description);
+
+.home-hint{
+    color: $bosch-dark-gray-w50!important;
+    margin-top: 0.5rem;
+    margin-bottom: 5rem;
+}
+.subscription-area {
+    padding: 0px 1rem;
+    .subscription-title{
+        margin: 0.5rem;
+    }
+}
