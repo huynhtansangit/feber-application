@@ -13,6 +13,8 @@ class PeoplePicker extends React.Component<any, any> {
                     defaultValue={this.props.defaultValue}
                     onChange={this.props.onChange}
                     componentRef={this.props.componentRef}
+                    path={this.props.path}
+                    uploadType={this.props.uploadType}
                 />
                 {
                     (!_.isUndefined(this.props.errorMessage)) ?

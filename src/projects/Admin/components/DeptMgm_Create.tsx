@@ -160,7 +160,7 @@ class DeptMgm_Create extends React.Component<DeptMgm_CreateProps, any> {
             this.state.documenType,
             this.state.securityClass,
             departmentName);
-        this.departmentListsSrv.goToSubsite(this.state.documenType + "/" + this.state.division);
+        this.departmentListsSrv.goToSubsite({rootSite:"",documentType:this.state.documenType,division: this.state.division});
         // Check whether the department list is existing
         this.departmentListsSrv.checkExistingDepartmentList(listName).then((checkResult: boolean) => {
             if (checkResult === false) {

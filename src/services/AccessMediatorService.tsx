@@ -59,7 +59,7 @@ class AccessMediatorService extends BaseService {
         });
         return promise;
     }
-
+    //note
     updateReport(userToken: string, report: any) {
         let promise = new Promise((resolve) => {
             this.axios({

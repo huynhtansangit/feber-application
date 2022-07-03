@@ -61,8 +61,10 @@ class MoveReport extends React.Component<MoveReportProps, any> {
             if (searchPart.indexOf("?guid=") > -1) {
                 // Get report
                 this.searchSrv.searhReportByGuid(searchPart.split("?guid=")[1]).then((rs: any) => {
+                    console.log(">>>>> Check searchReportByGuid",rs)
+                    let path=rs.results[0].Path.split('/'+rs.results[0].UploadType)[0];
                     if (rs.results.length > 0) {
-                        this.departmentListsSrv.getListItemBySearchResult(rs.results[0]).then((rs: any) => {
+                        this.departmentListsSrv.getListItemBySearchResult(rs.results[0],path).then((rs: any) => {
                             if (!_.isNil(rs.ReportAuthor.results)) {
                                 let authors: string[] = [];
                                 rs.ReportAuthor.results.forEach((author: any) => {
@@ -254,7 +256,8 @@ class MoveReport extends React.Component<MoveReportProps, any> {
         // Move
         if (validationResult === true) {
             this.props.showDialog(Constants.DIALOG_MESSAGE.MOVE_REPORT);
-            this.departmentListsSrv.moveSingleReport(this.props.userProfile.userToken, {
+            this.departmentListsSrv.moveSingleReport(this.props.userProfile.userToken, 
+                {
                 permissions: this.props.userProfile?.permissions,
                 sourceReport: this.state.moveItem,
                 moveInfo: this.moveInfoRef.current.state,

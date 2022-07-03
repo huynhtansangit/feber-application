@@ -23,7 +23,7 @@ type dataType = string | IProperty | any;
 
 export const AccessMediatorReducer = (state: IAccessMediator = initialState, action: { type: string, data: dataType } ) => {
     //console.log(state)
-    //console.log(action)
+    // console.log(action)
     switch (action.type) {
         case Types.INIT: {
             let result: IAccessMediator = initialState;
@@ -347,7 +347,7 @@ export const checkLLForm = (state: IAccessMediator) => {
     };
 
     if (state.status === ReportStatus.CLOSED) { // Restart
-        // Authors
+        // ReportStatus
         result = {
             ...result, ...checkPeoplePickerValue({
                 condition: state.data.ReportAuthor.length > 0,

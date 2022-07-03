@@ -27,5 +27,4 @@ export const getSearchResults = (
     catch{
         dispatch(showHideLoading(Types.SHOW_ERROR));
     }
-
 };

@@ -214,7 +214,7 @@ class PermissionsService extends BaseService {
     }
 
     getUserById(userId: number) {
-        console.log(userId)
+        // console.log(userId)
         let promise = new Promise((resolve, reject) => {
             this.sp.web.siteUsers.getById(userId).get().then((result) => {
                 resolve(result);

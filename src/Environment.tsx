@@ -86,74 +86,77 @@ class Environment {
 
     /* ------------------------------ INTERNAL LINK ------------------------------ */ //--Uncomment block for deploy
 
-    static rootWeb = Environment._getRootWeb(window.location.protocol + "//" + window.location.host);
+    // static rootWeb = Environment._getRootWeb(window.location.protocol + "//" + window.location.host);
 
-    static appUrl: string = Environment.rootWeb + Environment.spaSiteName + "/Pages/index.aspx#/";
+    // static appUrl: string = Environment.rootWeb + Environment.spaSiteName + "/Pages/index.aspx#/";
 
-    static isLocalhost: boolean = Environment.rootWeb === "http://localhost:1000";
+    // static isLocalhost: boolean = Environment.rootWeb === "http://localhost:1000";
 
-    static spaSiteUrl: string = Environment.rootWeb + Environment.spaSiteName;
+    // static spaSiteUrl: string = Environment.rootWeb + Environment.spaSiteName;
 
-    static spaRootPageUrl: string = Environment.spaSiteUrl + "/Pages/";
+    // static spaRootPageUrl: string = Environment.spaSiteUrl + "/Pages/";
 
-    static spaCommonPageUrl: string = Environment.spaRootPageUrl + "common/";
+    // static spaCommonPageUrl: string = Environment.spaRootPageUrl + "common/";
 
-    /* ------------------------------ CURRENT ENVIRONMENT ------------------------------ */
+    // /* ------------------------------ CURRENT ENVIRONMENT ------------------------------ */
 
-    static currentEnvironment: string = Environment._getCurrentEnvironment(Environment.rootWeb);
+    // static currentEnvironment: string = Environment._getCurrentEnvironment(Environment.rootWeb);
 
-    /* ------------------------------ PHA & WCF LINK ------------------------------ */
+    // /* ------------------------------ PHA & WCF LINK ------------------------------ */
 
-    static phaUrl: string = Environment._getFeberPHAUrl() + "FEBER/";
+    // static phaUrl: string = Environment._getFeberPHAUrl() + "FEBER/";
 
-    static phaPageUrl: string = Environment.phaUrl + "FeberApp/Pages/";
+    // static phaPageUrl: string = Environment.phaUrl + "FeberApp/Pages/";
 
-    static feberWebServiceUrl: string = Environment._getFeberWebServiceUrl() + "/FEBER/FeberWebAPI/";
-    // // Test
-    // static feberWebServiceUrl: string = "http://localhost:50614/";
+    // static feberWebServiceUrl: string = Environment._getFeberWebServiceUrl() + "/FEBER/FeberWebAPI/";
+    // // // Test
+    // // static feberWebServiceUrl: string = "http://localhost:50614/";
 
-    static feberWCFUrl: string = Environment._getFeberWebServiceUrl() + "/FEBER/FeberWorkOnConnector/FeberWorkOnConnector.svc/";
+    // static feberWCFUrl: string = Environment._getFeberWebServiceUrl() + "/FEBER/FeberWorkOnConnector/FeberWorkOnConnector.svc/";
 
 
     /* ------------------------------ USE TO RUN ON LOCAL (WITH SANDBOX ENVIRONMENT)------------------------------ */
 
-        // static local = 'http://localhost:3000';
+        static local = 'http://localhost:3000';
 
-        // //static rootWeb = 'https://feber.sp-apps-d1.bosch.com';
-        // static rootWeb = 'http://feber.inside-apps-sandbox.bosch.com';
-        // //static rootWeb = "https://feber.inside-appsd.bosch.com";
-        // static appUrl: string = Environment.local + Environment.spaSiteName + "/Pages/index.aspx#/";
+        // static rootWeb = 'https://feber.sp-apps-d2.bosch.com';
+        static rootWeb = 'http://feber.inside-apps-sandbox.bosch.com';
+        //static rootWeb = "https://feber.inside-appsd.bosch.com";
+        static appUrl: string = Environment.local + Environment.spaSiteName + "/Pages/index.aspx#/";
 
-        // static isLocalhost: boolean = Environment.local === "http://localhost:1000";
+        static isLocalhost: boolean = Environment.local === "http://localhost:1000";
 
-        // //static spaSiteUrl: string = Environment.local + Environment.spaSiteName;
-        // static spaSiteUrl: string = Environment.rootWeb + Environment.spaSiteName;
+        //static spaSiteUrl: string = Environment.local + Environment.spaSiteName;
+        static spaSiteUrl: string = Environment.rootWeb + Environment.spaSiteName;
 
-        // static spaRootPageUrl: string = Environment.local + Environment.spaSiteName + "/Pages/";
+        static spaRootPageUrl: string = Environment.local + Environment.spaSiteName + "/Pages/";
 
-        // static spaCommonPageUrl: string = Environment.spaRootPageUrl + "common/";
+        static spaCommonPageUrl: string = Environment.spaRootPageUrl + "common/";
 
-        // /* ------------------------------ CURRENT ENVIRONMENT ------------------------------ */
+        /* ------------------------------ CURRENT ENVIRONMENT ------------------------------ */
 
-        // static currentEnvironment: string = 'S';
-        // //static currentEnvironment: string = 'D';
-        // /* ------------------------------ PHA & WCF LINK ------------------------------ */
+        static currentEnvironment: string = 'S';
+        //static currentEnvironment: string = 'D';
+        /* ------------------------------ PHA & WCF LINK ------------------------------ */
 
-        // static phaUrl: string = 'http://localhost:50614/';
-        // //static phaUrl: string = 'http://inside-hosted-apps-sandbox.bosch.com/' + "FEBER/";
-        // //static phaUrl: string = 'https://inside-hosted-appsd.bosch.com/' + "FEBER/";
-        // static phaPageUrl: string = Environment.phaUrl + "FeberApp/Pages/";
+        static phaUrl: string = 'http://localhost:50614/';
+        //static phaUrl: string = 'http://inside-hosted-apps-sandbox.bosch.com/' + "FEBER/";
+        //static phaUrl: string = 'https://inside-hosted-appsd.bosch.com/' + "FEBER/";
+        //static phaUrl: string = 'https://inside-share-hosted-apps-d2.bosch.com/' + "FEBER/";
+        static phaPageUrl: string = Environment.phaUrl + "FeberApp/Pages/";
 
-        // static feberWebServiceUrl: string = 'http://localhost:50614/';
-        // //static feberWebServiceUrl: string = 'http://inside-hosted-apps-sandbox.bosch.com' + "/FEBER/FeberWebAPI/";
-        // //static feberWebServiceUrl: string = 'https://inside-hosted-appsd.bosch.com' + "/FEBER/FeberWebAPI/";
-        // //static feberWebServiceUrl: string = 'https://fe0vmc2540.de.bosch.com' + "/FEBER/FeberWebAPI/"; 
-        // // // Test
-        // // static feberWebServiceUrl: string = "http://localhost:50614/";
+        static feberWebServiceUrl: string = 'http://localhost:50614/';
+        //static feberWebServiceUrl: string = 'http://inside-hosted-apps-sandbox.bosch.com' + "/FEBER/FeberWebAPI/";
+        //static feberWebServiceUrl: string = 'https://inside-hosted-appsd.bosch.com' + "/FEBER/FeberWebAPI/";
+        //static feberWebServiceUrl: string = 'https://fe0vmc2540.de.bosch.com' + "/FEBER/FeberWebAPI/";
+        //static feberWebServiceUrl: string = 'https://inside-share-hosted-apps-d2.bosch.com' + "/FEBER/FeberWebAPI/"; 
+        // // Test
+        // static feberWebServiceUrl: string = "http://localhost:50614/";
 
-        // static feberWCFUrl: string = 'http://localhost:50614' + "/FeberWorkOnConnector.svc/";
-        // //static feberWCFUrl: string = 'http://inside-hosted-apps-sandbox.bosch.com' + "/FEBER/FeberWorkOnConnector/FeberWorkOnConnector.svc/";
-        // //static feberWCFUrl: string = 'https://inside-hosted-appsd.bosch.com' + "/FEBER/FeberWorkOnConnector/FeberWorkOnConnector.svc/";
+        static feberWCFUrl: string = 'http://localhost:50614' + "/FeberWorkOnConnector.svc/";
+        //static feberWCFUrl: string = 'http://inside-hosted-apps-sandbox.bosch.com' + "/FEBER/FeberWorkOnConnector/FeberWorkOnConnector.svc/";
+        //static feberWCFUrl: string = 'https://inside-hosted-appsd.bosch.com' + "/FEBER/FeberWorkOnConnector/FeberWorkOnConnector.svc/";
+        //static feberWCFUrl: string = 'https://inside-share-hosted-apps-d2.bosch.com' + "/FEBER/FeberWorkOnConnector/FeberWorkOnConnector.svc/";
     /* ------------------------------ EXTERNAL LINK ------------------------------ */
 
     static workOnUrl: string = Environment._getWorkOnUrl();
@@ -180,7 +183,7 @@ class Environment {
         let environment = "";
         // Case SP2019
 
-        var s = "";
+        let s = "";
         if (Environment.rootWeb.includes("feber.sp-apps")) {
             s = "feber.sp-apps"
         }
@@ -222,7 +225,7 @@ class Environment {
         let result: string = "";
         let environment = "";
         // Case SP2019
-        var s = "";
+        let s = "";
         if (Environment.rootWeb.includes("feber.sp-apps")) {
             s = "feber.sp-apps"
         }
@@ -261,8 +264,15 @@ class Environment {
     }
 
     private static _getWorkOnUrl() {
+        let s = "";
+        if (Environment.rootWeb.includes("feber.sp-apps")) {
+            s = "feber.sp-apps"
+        }
+        else {
+            s = "feber.inside-apps"
+        }
         try {
-            let environment = Environment.rootWeb.split("feber.inside-apps")[1].split(".bosch.com")[0];
+            let environment = Environment.rootWeb.split(s)[1].split(".bosch.com")[0];
             if (environment === "") {
                 return "https://rb-wam.bosch.com/workon01/workflow01/plugins/servlet/redir/search/FEBER";
             }
@@ -276,8 +286,15 @@ class Environment {
     }
 
     private static _getWorkOnItemUrl() {
+        let s = "";
+        if (Environment.rootWeb.includes("feber.sp-apps")) {
+            s = "feber.sp-apps"
+        }
+        else {
+            s = "feber.inside-apps"
+        }
         try {
-            let environment = Environment.rootWeb.split("feber.inside-apps")[1].split(".bosch.com")[0];
+            let environment = Environment.rootWeb.split(s)[1].split(".bosch.com")[0];
             if (environment === "") {
                 return "https://rb-wam.bosch.com/workon01/workflow01/browse/";
             }
@@ -291,8 +308,15 @@ class Environment {
     }
 
     private static _getBoschConnectUrl() {
+        let s = "";
+        if (Environment.rootWeb.includes("feber.sp-apps")) {
+            s = "feber.sp-apps"
+        }
+        else {
+            s = "feber.inside-apps"
+        }
         try {
-            let environment = Environment.rootWeb.split("feber.inside-apps")[1].split(".bosch.com")[0];
+            let environment = Environment.rootWeb.split(s)[1].split(".bosch.com")[0];
             if (environment === "") {
                 return "https://connect.bosch.com/communities/service/html/communitystart?communityUuid=66db0241-4c1b-469b-9f4d-80fdaff0cd55";
             }
@@ -308,15 +332,22 @@ class Environment {
     private static _getFeberFeedbackUrl() {
         let result: string = "";
         let environment = "";
+        let s = "";
+        if (Environment.rootWeb.includes("feber.sp-apps")) {
+            s = "feber.sp-apps"
+        }
+        else {
+            s = "feber.inside-apps"
+        }
         try {
-            environment = Environment.rootWeb.split("feber.inside-apps")[1].split(".bosch.com")[0];
+            environment = Environment.rootWeb.split(s)[1].split(".bosch.com")[0];
         }
         catch{
             environment = "-sandbox";
         }
         switch (environment.toLowerCase()) {
             case "-sandbox": // Sandbox
-            case "d": // D2
+            case "-d2": // D2
             case "q": { // Q
                 result = "https://survey.bosch.com/cgi-bin/s.app?A=9VGOY1Gl&S=SYS.Q";
                 break;
@@ -332,7 +363,7 @@ class Environment {
     private static _getRootWeb(originUrl: string) {
         let result = "";
         let environment = "";
-        var s = "feber.sp-apps";
+        let s = "feber.sp-apps";
         try {
             environment = originUrl.split(s)[1].split(".bosch.com")[0];
         }
@@ -347,7 +378,7 @@ class Environment {
         let result: string = "";
         let eCode = "";
         // Case SP2019
-        var s = "";
+        let s = "";
         if (Environment.rootWeb.includes("feber.sp-apps")) {
             s = "feber.sp-apps"
         }

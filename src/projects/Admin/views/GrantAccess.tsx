@@ -238,8 +238,7 @@ class GrantAccess extends React.Component<GrantAccessProps, any> {
 
     getDepartmentLists(scArr: any[]) {
         if (!_.isNil(this.state.selectedDocumentType)) {
-            this.departmentListsSrv.goToSubsite(this.state.selectedDocumentType
-                + "/" + this.state.selectedDivision);
+            this.departmentListsSrv.goToSubsite({rootSite:"",documentType:this.state.selectedDocumentType,division:this.state.selectedDivision});
             this.departmentListsSrv.getListsBySecurityClasses(scArr).then((results: any[]) => {
                 let rs: any[] = [];
                 results.forEach(list => {
@@ -302,7 +301,7 @@ class GrantAccess extends React.Component<GrantAccessProps, any> {
             addedCustomACL: customACL,
         };
         let departmentListsSrv = new DepartmentService();
-        departmentListsSrv.goToSubsite(updatedObj.documentType + "/" + updatedObj.division);
+        departmentListsSrv.goToSubsite({rootSite:"",documentType:updatedObj.documentType,division: updatedObj.division});
         departmentListsSrv.updateCustomACL(updatedObj.listName, updatedObj.addedCustomACL).then((result) => {
             if (result === true) {
                 this.props.confirmDialog(

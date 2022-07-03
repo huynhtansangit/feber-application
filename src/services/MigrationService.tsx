@@ -92,7 +92,7 @@ class MigrationService extends BaseService {
                     TargetList: Helper.getListName(item.UploadType, item.SecurityClass, infoObj.targetDepartment),
                     GUID1: item.GUID1,
                     Status: "New",
-                    SourceUrl: Environment.rootWeb + "/" + item.UploadType + "/" + infoObj.sourceDivision + "/Lists/" + Helper.getListNameUrl(item.__metadata.type) + "/DispForm.aspx?ID=" + item.Id,
+                    SourceUrl: Environment.rootWeb + "/" + item.UploadType + "/" + infoObj.sourceDivision + "/Lists/" + Helper.getListNameUrl(item) + "/DispForm.aspx?ID=" + item.Id,
                     TargetUrl: "",
                     AccessMembers: JSON.stringify(Helper.getAccessGroups(item.UploadType, item.SecurityClass, accessGroups, infoObj.rouId, infoObj.portfolioId)),
                     DocumentType: item.UploadType,

@@ -52,7 +52,7 @@ class Statistics extends React.Component<StatisticsProps, any> {
                     }>
                         <div className="ms-Grid">
                             <div className="ms-Grid-row">
-                                <iframe style={{width:"100%", minHeight: "80vh", overflow:"auto"}} src="https://app.powerbi.com/reportEmbed?reportId=d4486792-04bf-4338-a3f5-f589ca4f7a94&autoAuth=true&ctid=0ae51e19-07c8-4e4b-bb6d-648ee58410f4&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWV1cm9wZS1ub3J0aC1iLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9"  allowFullScreen></iframe>
+                                <iframe style={{width:"100%", minHeight: "80vh", overflow:"auto"}} src="https://app.powerbi.com/reportEmbed?reportId=6e12c79f-0fdb-484a-8be4-2f35460c75ba&autoAuth=true&ctid=0ae51e19-07c8-4e4b-bb6d-648ee58410f4&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLW5vcnRoLWV1cm9wZS1sLXByaW1hcnktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D"  allowFullScreen></iframe>
                             </div>
                         </div>
                     </React.Suspense>

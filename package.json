@@ -69,7 +69,7 @@
     "QUALITY": "----------------------------------------------------------------------------------------------------",
     "build-q": "set PUBLIC_URL=https://feber.inside-appsq.bosch.com/SPA/Pages&&set GENERATE_SOURCEMAP=false&&react-scripts build&&npm run run-after-build",
     "PRODUCTION": "----------------------------------------------------------------------------------------------------",
-    "build-p": "set PUBLIC_URL=https://feber.inside-apps.bosch.com/SPA/Pages&&set GENERATE_SOURCEMAP=false&&react-scripts build&&npm run run-after-build",
+    "build-p": "set PUBLIC_URL=https://feber.sp-apps.bosch.com/SPA/Pages&&set GENERATE_SOURCEMAP=false&&react-scripts build&&npm run run-after-build",
     "ONLINE": "----------------------------------------------------------------------------------------------------",
     "build-o": "set PUBLIC_URL=https://goetzinger.sharepoint.com/sites/FEBER_Dev/SPA/Pages&&set GENERATE_SOURCEMAP=false&&react-scripts build&&npm run run-after-build",
     "test": "react-scripts test",
